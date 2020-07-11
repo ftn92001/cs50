@@ -1,0 +1,145 @@
+table, th, td
+{
+    border: 1px solid black;
+}
+
+table
+{
+    width: 100%;
+}
+
+.picture
+{
+    width: 15%;
+    text-align: center;
+}
+
+.small-picture
+{
+    height: 50%;
+}
+
+hr
+{
+    border: 0;
+    background-color: #093;
+    height: 3px;
+}
+
+.center
+{
+    text-align: center;
+}
+
+iframe
+{
+    width: 70%;
+    height: 450px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.hover:hover
+{
+    color: blue;
+    cursor: pointer;
+}
+
+.btn-pink
+{
+    background-color: pink;
+    color: blue;
+}
+
+.btn-palevioletred
+{
+    background-color: palevioletred;
+    color: blue;
+}
+
+.btn-mistyrose
+{
+    background-color: mistyrose;
+    color: blue;
+}
+
+.btn-orange
+{
+    background-color: orange;
+    color: blue;
+}
+
+.btn-yellow
+{
+    background-color: yellow;
+    color: blue;
+}
+
+.btn-slateblue
+{
+    background-color: slateblue;
+    color: blue;
+}
+
+.btn-skyblue
+{
+    background-color: skyblue;
+    color: blue;
+}
+
+.btn-thistle
+{
+    background-color: thistle;
+    color: blue;
+}
+
+.btn-lightcoral
+{
+    background-color: lightcoral;
+    color: blue;
+}
+
+.btn-peachpuff
+{
+    background-color: peachpuff;
+    color: blue;
+}
+
+.btn-honeydew
+{
+    background-color: honeydew;
+    color: blue;
+}
+
+.btn-snow
+{
+    background-color: snow;
+    color: blue;
+}
+
+
+.btn-paleturquoise
+{
+    background-color: paleturquoise;
+    color: blue;
+}
+
+.background
+{
+    background-position: center;
+    background-size: contain;
+}
+
+.image
+{
+    height: 300px;
+    max-width: 100%;
+}
+
+.visibility-hidden
+{
+    visibility: hidden;
+}
