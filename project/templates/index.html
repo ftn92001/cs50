@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <div class="row">
+        <div class="col">
+            <!--posts-->
+            {% for prow in prows %}
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="text-primary">
+                        Last update: {{ prow["timestamp"] }}
+                    </span>
+                    <input type="button" class="btn-success" name="edit" value="Edit" onclick="location.href='/edit?p={{ prow["postid"] }}'">
+                    <input type="button" class="btn-danger" name="delete" value="Delete" onclick="location.href='/delete?p={{ prow["postid"] }}'">
+                </div>
+
+                <div class="card-body text-left">
+                    <h5 class="card-title">{{ prow["text-content"] }}</h5>
+                </div>
+            </div>
+
+            {% endfor %}
+
+            <br>
+            <div class="text-center">
+                <button class="btn btn-primary circle" onclick="location.href='/create'">+</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

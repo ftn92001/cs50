@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Edit Post
+{% endblock %}
+
+{% block main %}
+    <h1>Edit Post</h1>
+    <form action="/edit" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <textarea id="post-text" autocomplete="off" autofocus name="post-text" rows="10" cols="50" class="form-control post-text"></textarea>
+        </div>
+        <div class="form-group">
+            <input name="post-id" hidden value="{{ postid }}">
+        </div>
+        <button id="post-button" class="btn btn-primary" type="submit" disabled>Edit</button>
+    </form>
+{% endblock %}

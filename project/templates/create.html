@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Create Post
+{% endblock %}
+
+{% block main %}
+    <h1>Create Post</h1>
+    <form action="/create" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <textarea id="post-text" autocomplete="off" autofocus name="post-text" rows="10" cols="50" class="form-control post-text" placeholder="What's on your mind?"></textarea>
+        </div>
+        <button id="post-button" class="btn btn-primary" type="submit" disabled>Post</button>
+    </form>
+{% endblock %}
